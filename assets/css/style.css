@@ -1,0 +1,103 @@
+/*
+- White: #ffffff
+- Slate 300:#d6e2f0
+- Slate 500: #68778d
+- Slate 900: #1f3251
+- Text preset1: outfit bold 2.2rem line height: 2.64rem letter spacing: 0px
+- text preset2: outfit regular 1.5rem line height: 2.1rem letter spacing: 0.02rem
+*/
+
+:root {
+  --white: #ffffff;
+  --slate-300: #d5e1ef;
+  --slate-500: #68778d;
+  --slate-900: #1f314f;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Outfit";
+  font-size: 62.5%;
+}
+
+main {
+  background-color: var(--slate-300);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+  .qr-code {
+    width: 280px;
+    height: 500px;
+    background-color: var(--white);
+    border-radius: 20px;
+    padding: 16px;
+
+    .qr-code-header {
+      width: 248px;
+      height: 248px;
+      display: flex;
+      align-items: center;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+    .qr-code-title {
+      margin-top: 24px;
+      color: var(--slate-900);
+      font-size: 2.2rem;
+      font-weight: bold;
+      line-height: 2.64rem;
+      letter-spacing: 0rem;
+      text-align: center;
+    }
+
+    .qr-code-description {
+      color: var(--slate-500);
+      font-size: 1.5rem;
+      font-weight: regular;
+      line-height: 2.1rem;
+      letter-spacing: 0.02rem;
+      text-align: center;
+      margin-top: 16px;
+    }
+  }
+
+  .attribution {
+    font-size: 1.5rem;
+    line-height: 2.1rem;
+    letter-spacing: 0.02rem;
+    text-align: center;
+    margin-top: 24px;
+
+    a {
+      color: #3e52a3;
+      text-decoration: none;
+
+      &:hover {
+        color: var(--slate-900);
+      }
+    }
+  }
+}
+
+@media (min-width: 375px) {
+  main {
+    .qr-code {
+      width: 320px;
+
+      .qr-code-header {
+        height: 288px;
+        width: 288px;
+      }
+    }
+  }
+}
