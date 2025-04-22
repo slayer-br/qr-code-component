@@ -19,7 +19,7 @@ Esta é a minha solução para o desafio <a href="https://www.frontendmentor.io/
 
 ### 📷 Captura de tela
 
-![Captura de Tela](./screenshot.jpg)
+![Captura de Tela](./screenshot.png)
 
 ### 🔗 Links
 
